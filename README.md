@@ -1,6 +1,5 @@
-# Distributed hash table
+# Kademlia
 
+This package provides a experimental implementation of [Kademlia](https://en.wikipedia.org/wiki/Kademlia) which is a very popular [distributed hash table](https://en.wikipedia.org/wiki/Distributed_hash_table).
 
-This package provides a experimental implementation of [Distributed hash table](https://en.wikipedia.org/wiki/Distributed_hash_table).
-
-See [(http://godoc.org/github.com/droxer/dht)](http://godoc.org/github.com/droxer/dht) for documentation.
+See [(http://godoc.org/github.com/droxer/kademlia)](http://godoc.org/github.com/droxer/kademlia) for documentation.
