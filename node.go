@@ -30,14 +30,20 @@ type contact struct {
 	port uint16
 }
 
+type kBucket *lru.Cache
+
+func newKBucket() kBucket {
+	return lru.New(K)
+}
+
 type node struct {
 	id      nodeID
-	kBucket *lru.Cache
+	kBucket kBucket
 }
 
 func newNode() *node {
 	return &node{
 		id:      newID(),
-		kBucket: lru.New(K),
+		kBucket: newKBucket(),
 	}
 }
